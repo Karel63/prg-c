@@ -4,13 +4,13 @@
 
 void ceasar_encrypt(char *ot){
     for(int f = 0; f < strlen(ot); f++){
-        p[f] = p[f];
-        ot += 3;
+        p[f] += 3;
     }
-    printf("%s", ot);
+    printf("%s\n", ot);
 }
 
 int main() {
     char ot[] = "ABCDEFGHIJK";
+    printf("%s\n", ot);
     ceasar_encrypt(ot);
 }

@@ -1,16 +1,16 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-void ceasar_encrypt(*p){
-    printf("%c, ", p);
+void ceasar_encrypt(char *ot){
+    for(int f = 0; f < strlen(ot); f++){
+        p[f] = p[f];
+        ot += 3;
+    }
+    printf("%s", ot);
 }
 
 int main() {
-    char p = 65;
-    for(int d = ; p <= d; d++){
-        p = *p + 2;
-        ceasar_encrypt; 
-    }
-    return 0;
+    char ot[] = "ABCDEFGHIJK";
+    ceasar_encrypt(ot);
 }
-
-//lépe už to nevymyslím...
